@@ -1,5 +1,5 @@
 {
-  "name": "news-website",
+  "name": "news_website_angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
