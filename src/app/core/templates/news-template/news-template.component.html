@@ -1,0 +1,19 @@
+<div class="p-grid p-col-11 p-mx-6 p-flex-column p-justify-center p-align-center" *ngIf="!!apiResultArticles">
+    <div class="p-grid p-col-10 p-my-6" *ngFor="let article of apiResultArticles">
+        
+            <p-card [header]="article?.title" [subheader]="formatDate(article?.publishedAt)" styleClass="col-6 mx-6">
+                <ng-template pTemplate="header">
+                    <img alt="Card" [src]="article?.urlToImage">
+                </ng-template>
+                <ng-template pTemplate="content">
+                    <p class="p-mx-6">{{article?.description}}</p>
+                </ng-template>
+                <ng-template pTemplate="footer">
+                    <p-button label="Read More" icon="pi pi-external-link" (click)="goToLink(article.url)" class="p-float-right"></p-button>
+                </ng-template>
+            </p-card>
+    </div>
+</div>
+
+
+

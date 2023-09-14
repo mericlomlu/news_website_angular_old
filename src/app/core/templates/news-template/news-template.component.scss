@@ -1,0 +1,29 @@
+:host ::ng-deep .p-card{
+    
+    .p-card-body {
+		display: flex;
+		flex-direction: column;
+    
+        .p-card-title{
+            justify-self: center;
+            align-self: center;
+            text-align: center;
+        }
+
+        .p-card-subtitle{
+            justify-self: center;
+            align-self: center;
+            text-align: center;
+        }
+    }
+
+    .p-card-content{
+        text-align: center;
+    }
+
+    .p-card-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
